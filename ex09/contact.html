@@ -1,0 +1,65 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Index</a></li>
+                <li><a href="./php.html">PHP</a></li>
+                <li><a href="./sql.html">SQL</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <label id="nom-label">Nom : </label>
+            <input id="nom" type="text" placeholder="Doe" required>
+
+            <label id="prenom-label">Prénom : </label>
+            <input id="prenom" type="text" placeholder="John" required>
+
+            <label id="email-label">Email : </label>
+            <input id="email" type="email" name="email" placeholder="your@e.mail" required>
+
+            <label id="age-label">Age : </label>
+            <input id="age" type="number" min="3" max="99" placeholder="00">
+            
+            <label id="phone-label">Téléphone : </label>
+            <input id="phone" type="number" name="phone" maxlength="10">
+
+            <label id="sexe-label">Sexe : </label>
+            <ul>
+                <li><input type="radio" name="radio-buttons" value="1"><label>Femme</label></li>
+                <li><input type="radio" name="radio-buttons" value="2"><label>Homme</label></li>
+            </ul>
+
+            <label id="favColor-label">Couleur préférée : </label>
+            <input id="favColor" type="color" name="favColor">
+
+            <label id="date-label">Date : </label>
+            <input id="date" type="datetime-local" name="date">
+
+            <label >Technologie : </label>
+            <select>
+                <option disabled value>Choisissez une option</option>
+                <option value="option">PHP</option>
+                <option value="option">SQL</option>
+                <option value="option">Autre</option>
+            </select>
+
+            <label>Question : </label>
+            <textarea placeholder="Posez ici votre question" required></textarea>
+
+            <button id="submit" type="submit">Soumettre</button>
+        </form>
+    </main>
+    <aside></aside>
+    <footer>"Nom" - "Prénom" - "Adresse" - "Téléphone"</footer>
+</body>
+</html>
